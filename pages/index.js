@@ -1,4 +1,6 @@
-import Head from 'next/head'
+import Head from 'next/head';
+import Header from '../components/Header';
+
 
 export default function Home() {
   return (
@@ -7,8 +9,14 @@ export default function Home() {
         <title>The Social Network</title>
       </Head>
 
-      <h1>The Social Network!</h1>
-    
+      {/* Header */}
+      <Header />
+
+      <main>
+        {/* Sidebar */}
+        {/* Feed */}
+        {/* Widgets */}
+      </main>
     </div>
   )
 }
