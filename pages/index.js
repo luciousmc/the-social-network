@@ -2,6 +2,8 @@ import Head from 'next/head';
 import Header from '../components/Header';
 import { getSession } from 'next-auth/client';
 import Login from '../components/Login';
+import Sidebar from '../components/Sidebar';
+import Feed from '../components/Feed';
 
 
 export default function Home({ session }) {
@@ -10,7 +12,7 @@ export default function Home({ session }) {
   }
 
   return (
-    <div>
+    <div className='h-screen bg-gray-100 overflow-hidden'>
       <Head>
         <title>The Social Network</title>
       </Head>
@@ -18,9 +20,13 @@ export default function Home({ session }) {
       {/* Header */}
       <Header />
 
-      <main>
+      <main className='flex'>
         {/* Sidebar */}
+        <Sidebar />
+
         {/* Feed */}
+        <Feed />
+
         {/* Widgets */}
       </main>
     </div>
