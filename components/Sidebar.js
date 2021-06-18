@@ -1,5 +1,3 @@
-import { useSession } from "next-auth/client";
-import Image from 'next/image';
 import {
   ChevronDownIcon,
   ShoppingBagIcon,
@@ -12,6 +10,8 @@ import {
   UsersIcon
 } from '@heroicons/react/solid';
 import SidebarRow from './SidebarRow';
+import { useSession } from "next-auth/client";
+
 
 
 function Sidebar() {

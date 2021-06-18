@@ -1,3 +1,5 @@
+import StoryCard from './StoryCard';
+
 const stories = [
   {
     name: 'Elon Musk',
@@ -18,21 +20,20 @@ const stories = [
     name: 'Bill Gtes',
     src: 'https://links.papareact.com/4u4',
     profile: 'https://links.papareact.com/zvy'
-  },
-
+  }
 ]
 
 function Stories() {
   return (
     <div className='flex justify-center space-x-3 mx-auto'>
-      {stories.map((story, i) => {
+      {stories.map((story, i) => (
         <StoryCard
           key={i}
           name={story.name}
           src={story.src}
           profile={story.profile}
         />
-      })}
+      ))}
     </div>
   )
 }
