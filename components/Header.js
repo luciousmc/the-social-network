@@ -18,7 +18,7 @@ function Header() {
   return (
     <div>
       {/* Left */}
-      <div>
+      <div className='flex items-center'>
         <Image
           src='https://links.papareact.com/5me'
           width={40}
@@ -26,8 +26,9 @@ function Header() {
           layout='fixed'
         />
 
-        <div>
-          <input type="text" placehoder='Search Facebook' />
+        <div className='flex'>
+          <SearchIcon className='h-6 text-gray-600' />
+          <input type="text" placeholder='Search Facebook' />
         </div>
       </div>
 
