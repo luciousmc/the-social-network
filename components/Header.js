@@ -14,6 +14,9 @@ import {
   ShoppingCartIcon
 } from '@heroicons/react/outline';
 import HeaderIcon from './HeaderIcon';
+import { getSession } from 'next-auth/client';
+import Login from './Login';
+
 
 function Header() {
   return (
@@ -53,7 +56,10 @@ function Header() {
         {/* Profile Pic */}
 
         <p className='font-semibold pr-3 whitespace-nowrap'>MarzBarz</p>
-        
+        <ViewGridIcon className='icon' />
+        <ChatIcon className='icon' />
+        <BellIcon className='icon' />
+        <ChevronDownIcon className='icon' />
       </div>
     </div>
   )
