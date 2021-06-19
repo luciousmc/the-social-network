@@ -1,3 +1,5 @@
+import { ChatIcon, ShareIcon, ThumbUpIcon } from '@heroicons/react/outline';
+import { ChatAltIcon } from '@heroicons/react/solid';
 import Image from 'next/image';
 
 function Post({ name, email, message, postImage, image, timestamp }) {
@@ -33,6 +35,25 @@ function Post({ name, email, message, postImage, image, timestamp }) {
           />
         </div>
       )}
+
+      {/* Footer (post) */}
+
+      <div className='flex justify-between items-center rounded-b-2xl bg-white shadow-md text-gray-400 border-t'>
+        <div className='inputIcon rounded-none rounded-bl-2xl'>
+          <ThumbUpIcon className='h-4' />
+          <p className='inputIconText'>Like</p>
+        </div>
+
+        <div className='inputIcon'>
+          <ChatAltIcon className='h-4' />
+          <p className='inputIconText'>Comment</p>
+        </div>
+
+        <div className='inputIcon'>
+          <ShareIcon className='h-4' />
+          <p className='inputIconText'>Share</p>
+        </div>
+      </div>
     </div>
   )
 }

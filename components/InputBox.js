@@ -117,7 +117,7 @@ function InputBox() {
         >
           <CameraIcon className='h-7 text-green-400' />
           <p className="inputIconText">Photo/Video</p>
-          <input ref={filePickerRef} type="file" hidden onClick={addImageToPost} />
+          <input ref={filePickerRef} type="file" hidden onChange={addImageToPost} />
         </div>
         <div className='inputIcon'>
           <EmojiHappyIcon className='h-7 text-yellow-300' />
